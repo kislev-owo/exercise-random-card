@@ -56,13 +56,16 @@ window.onload = () => {
     for (child of top.children) {
     let randomIndex2 = Math.floor(Math.random() * simbolos.length);
         child.classList.add(`${simbolos[randomIndex2]}`);
-        child.innerHTML = `<p class="text-center">${simbolos[randomIndex2]}</p>`;
+        child.innerHTML = `${simbolos[randomIndex2]}`;
     }
     for (child of bottom.children) {
     let randomIndex3 = Math.floor(Math.random() * simbolos.length);
         child.classList.add(`${simbolos[randomIndex3]}`);
-        child.innerHTML = `<p class="text-center">${simbolos[randomIndex3]}</p>`;
+        child.innerHTML = `${simbolos[randomIndex3]}`;
     }
+
+
+    
     
     carta.appendChild(bottom);
     carta.appendChild(top);
