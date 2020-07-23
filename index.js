@@ -55,13 +55,11 @@ window.onload = () => {
     
     for (child of top.children) {
     let randomIndex2 = Math.floor(Math.random() * simbolos.length);
-       child.style.height = "10rem";
         child.classList.add(`${simbolos[randomIndex2]}`);
         child.innerHTML = `<p class="text-center">${simbolos[randomIndex2]}</p>`;
     }
     for (child of bottom.children) {
     let randomIndex3 = Math.floor(Math.random() * simbolos.length);
-       child.style.height = "10rem";
         child.classList.add(`${simbolos[randomIndex3]}`);
         child.innerHTML = `<p class="text-center">${simbolos[randomIndex3]}</p>`;
     }
